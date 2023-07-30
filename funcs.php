@@ -19,7 +19,7 @@ function db_conn(){
         if($_SERVER["HTTP_HOST"] != 'localhost'){
             $db_name = "kaoriharada_gs_db5";  //データベース名
             $db_id   = "kaoriharada";  //アカウント名（さくらコントロールパネルに表示されています）
-            $db_pw   = "kaochi8897";  //パスワード(さくらサーバー最初にDB作成する際に設定したパスワード)
+            $db_pw   = "xxxxx";  //パスワード(さくらサーバー最初にDB作成する際に設定したパスワード)
             $db_host = "mysql57.kaoriharada.sakura.ne.jp"; //例）mysql**db.ne.jp...
         }
         return new PDO('mysql:dbname='.$db_name.';charset=utf8;host='.$db_host, $db_id, $db_pw);
